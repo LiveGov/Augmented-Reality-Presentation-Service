@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+	<style >
+		.bigimage {width:600px; margin:5px;}
+		.smallimage {width:200px; margin:5px;}
+	</style>
+
+	<title>Augmented Reality objects</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="../theme_ar.css">
+</head>
+
+
+
+<body style="max-width:1280px">
+
+
+<h2 style="margin:10px">Mobile clients</h2>
+<script type="text/javascript">
+function activateMainTab(pageId) {
+	document.getElementById('t1h').style.background="#eee";
+	document.getElementById('t2h').style.background="#eee";
+	document.getElementById(pageId+'h').style.background="#ccc";
+	
+	var tabMainCtrl = document.getElementById('tabMainCtrl');
+	var MainpageToActivate = document.getElementById(pageId);
+	for (var i = 0; i < tabMainCtrl.childNodes.length; i++) {
+		var nodeMain = tabMainCtrl.childNodes[i];
+		if (nodeMain.nodeType == 1)
+			nodeMain.style.display = (nodeMain == MainpageToActivate) ? '' : 'none';
+	}
+}
+</script>
+
+<div id='Downloads' style='margin:10px;'>
+
+	
+	<span id="t1h" onclick="javascript:activateMainTab('t1')">Commercial AR Browsers</span>
+	<span id="t2h" onclick="javascript:activateMainTab('t2')">Custom app for Gordexola</span>
+	
+	<div id="tabMainCtrl" style='padding-top:37px' >
+	
+	<div id="t1">
+		<table style="border: 1px;" width="100%" border="1" >
+			<colgroup>
+				<col width="30%" />
+				<col width="70%" />
+			</colgroup>
+			<tbody>
+				<tr >
+					<td style="padding:15px;"><img alt="" src="LOGO-junaio.png" width="100"/><br />
+					
+					
+			
+					
+					
+<br /> 
+<a href="https://play.google.com/store/apps/details?id=com.metaio.junaio&amp;hl=en" target="_blank"><img alt="" src="IMG-google_play.png" width="100"/></a>
+<a href="https://itunes.apple.com/us/app/junaio/id337415615" target="_blank"><img alt="" src="IMG-app_store.png" width="100"/></a>
+
+<br /><br /><br />Then scan the following:
+						<br /> <br /> Image Based AR channel<br>
+						
+						<img alt="" src="http://augreal.mklab.iti.gr/images/glue.png"
+						width="200" border="0" /><br><br>Location Based AR channel<br>
+						<img alt="" 
+						src="http://augreal.mklab.iti.gr/images/junaioqrlogo_174220.png"
+						width="200" border="0" />
+						
+						<br><br>
+						<hr/>
+						<img alt="" src="layarLogo.png" width="100"/><br>
+<a href="https://play.google.com/store/apps/details?id=com.layar" target="_blank"><img alt="" src="IMG-google_play.png" width="100"/></a>
+<a href="https://itunes.apple.com/us/app/layar-augmented-reality/id334404207?mt=8" target="_blank"><img alt="" src="IMG-app_store.png" width="100"/></a>
+						
+						<br><br>
+						Go to 'Geo Layers', 'Search Layers', and type 'Gordexola'.
+						
+						<br><br>
+						<hr/>
+						<h2>Wikitude</h2>
+						Type 'Gordexola' in the search bar.<br>
+						<img alt="" src="wikitudeLogo.jpg" width="100"/><br>
+<a href="https://play.google.com/store/apps/details?id=com.wikitude" target="_blank"><img alt="" src="IMG-google_play.png" width="100"/></a>
+<a href="https://itunes.apple.com/gr/app/wikitude/id329731243" target="_blank"><img alt="" src="IMG-app_store.png" width="100"/></a>
+						
+						
+					</td>
+					<td style="padding:15px;">
+						<table>
+							<tbody>
+								<tr>
+								Images for scanning with &#8216;Image Based AR Channel&#8217;
+					
+					<tr><td><img src="Swimming.jpg" class="bigimage"/><img src="Swimming.png" class="smallimage"/></td></tr>
+					<tr><td><img src="Garay.jpg" class="bigimage"/><img src="Garay.png" class="smallimage"/></td></tr>
+					<tr><td><img src="ZubieteFar.jpg" class="bigimage"/><img src="ZubieteFar.png" class="smallimage"/></td></tr>
+					<tr><td><img src="ZubieteClose.jpg" class="bigimage"/><img src="ZubieteClose.png" class="smallimage"/></td></tr>
+					<tr><td><img src="Ponton.jpg" class="bigimage"/><img src="Ponton.png" class="smallimage"/></td></tr>
+					
+					
+							</tbody>
+						</table>
+						<!-- 
+						<table>
+							<tbody>
+								<tr>
+									<td width="150px">Image based AR &#8211; Screenshots:</td>
+									<td><img alt=""
+										src="http://augreal.mklab.iti.gr/images/junaioibs.jpg"
+										width="120" /></td>
+									<td><img alt=""
+										src="http://augreal.mklab.iti.gr/images/junaiodetails.jpg"
+										width="120" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<tbody>
+								<tr>
+									<td width="200px">Location Based AR &#8211; Screenshots:</td>
+									<td><img alt=""
+										src="http://augreal.mklab.iti.gr/images/junaiolbs.jpg"
+										width="200" /></td>
+								</tr>
+							</tbody>
+						</table>
+						 -->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="t2" style="display: none;">
+		<table style="border: 1px;" width="100%" border="1" >
+			<colgroup>
+				<col width="30%" />
+				<col width="70%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td style="padding:15px;">Stand-alone application using the Metaio-SDK.
+						</p>
+						<p>
+							Android:<br /> <a
+								href="http://augreal.mklab.iti.gr/Downloads/Urbanplanning2.apk">Download the Binary</a> 
+								or scan with a QR reader the following in order to download the app:<br /> 
+							
+							<img alt="" src="http://augreal.mklab.iti.gr/images/downloadup2.png" width="200" height="200" border="0"/>
+							<br/><br/> 
+								
+								iPhone<br>
+								Soon available on AppStore
+								
+					</td>
+					<td style="padding:15px;">Screenshots
+						</p>
+						<table >
+							<tbody>
+								iOS
+								<tr>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/up_iOS_A.PNG" width="200px" /></td>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/up_iOS_B.PNG" width="200px" /></td>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/up_iOS_C.PNG" width="200px" /></td>
+								</tr>
+								<tr>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/up_iOS_D.PNG" width="200px" /></td>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/up_iOS_E.PNG" width="200px" /></td>
+								</tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td>Android</td></tr>
+								<tr>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/android_up_A.png" width="200px" /></td>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/android_up_B.png" width="200px" /></td>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/android_up_C.png" width="200px" /></td>
+									<td><img alt="" src="http://augreal.mklab.iti.gr/images/android_up_D.png" width="200px" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+<!-- 
+		<button id="bt1" style="border-style: inset;"
+			onclick="var bt1=document.getElementById('bt1'); var bt2=document.getElementById('bt2'); var bt3=document.getElementById('bt3'); bt1.style.borderStyle='inset'; bt2.style.borderStyle=''; bt3.style.borderStyle=''; var t1=document.getElementById('t1');var t2=document.getElementById('t2');var t3=document.getElementById('t3');t1.style.display='';t2.style.display='none';t3.style.display='none';">
+			<strong>Research prototype</strong><br />
+		</button>
+		<button id="bt2"
+			onclick="var bt1=document.getElementById('bt1'); var bt2=document.getElementById('bt2'); var bt3=document.getElementById('bt3'); bt1.style.borderStyle=''; bt2.style.borderStyle='inset'; bt3.style.borderStyle=''; var t1=document.getElementById('t1');var t2=document.getElementById('t2'); var t3=document.getElementById('t3'); t1.style.display='none'; t2.style.display=''; t3.style.display='none';">
+			<strong>On Junaio Browser</strong>
+		</button>
+		<button id="bt3"
+			onclick="var bt1=document.getElementById('bt1'); var bt2=document.getElementById('bt2'); var bt3=document.getElementById('bt3'); bt1.style.borderStyle=''; bt2.style.borderStyle=''; bt3.style.borderStyle='inset'; var t1=document.getElementById('t1');var t2=document.getElementById('t2'); var t3=document.getElementById('t3'); t1.style.display='none'; t2.style.display='none'; t3.style.display='';">
+			<strong>Integration Prototype</strong>
+		</button>
+		 -->
+	
+	<!-- 
+	<div id="t1">
+		<table style="border: 1px;" width="400px" border="1">
+			<colgroup>
+				<col width="30%" />
+				<col width="70%" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td>Research prototype for Android.<br /> <a
+						href="http://augreal.mklab.iti.gr/downloadAR/AR_Example_project.apk">Download
+							the Binary (apk)</a> or scan with a QR reader the following in order
+						to download the app:<br /> <img alt=""
+						src="http://augreal.mklab.iti.gr/images/qr_ar3dlib.png"
+						width="200" border="0" /><br /> <img alt=""
+						src="http://augreal.mklab.iti.gr/images/liveandgov.png" width="50"
+						border="0" />
+					</td>
+					<td>
+						<table style="border-width: 15px;">
+							<tbody>
+								<tr>
+									<td><img alt=""
+										src="http://augreal.mklab.iti.gr/images/lbs.jpg" width="220"
+										border="0" /></td>
+									<td><img alt=""
+										src="http://augreal.mklab.iti.gr/images/tangible.jpg"
+										width="100" border="0" /> <img alt=""
+										src="http://augreal.mklab.iti.gr/images/visrec.png"
+										width="100" border="0" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							<a
+								href="http://augreal.mklab.iti.gr/downloadAR/AR3DLib_and_Example.zip">Source</a><br />
+							<button id="bt"
+								onclick="var elin = document.getElementById('srcInstr'); if (elin.style.display=='') {elin.style.display='none';} else {elin.style.display='';}">
+								Instructions</button>
+						</p>
+						<div id="srcInstr" style="display: none;">
+							<p>Installation instructions</p>
+							<p>
+								- Eclipse Java EE, Android SDK and ADT tools should be first
+								installed;<br /> - Import the AR3dLib into Eclipse workspace;<br />
+								- Import AR_Example_project into Eclipse workspace;<br /> - Run
+								AR_Example_project.<br /> Methods map:<br /> <img alt=""
+									src="http://augreal.mklab.iti.gr/images/AR3DLib_graph.png"
+									width="400" border="0" />
+							</p>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	 -->

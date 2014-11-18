@@ -1,0 +1,64 @@
+
+/*
+ * @copyright  Copyright 2012 metaio GmbH. All rights reserved.
+ * @link       http://www.metaio.com
+ * @author     Stephan Evers
+*/
+ 
+* {
+	/* turns off the webkit magnifier glass and so on, which will be triggered
+	by the on touch events otherwise */
+	-webkit-highlight:           none;
+	-webkit-tap-highlight-color: rgba(200,0,0,0);
+	-webkit-touch-callout :      none;
+	-webkit-user-select:         none;
+}
+
+body {
+        background-color: transparent;
+}
+
+#buttons {
+        position: absolute;
+        bottom:   44px;
+        right:    44px;
+}
+
+.ipad div {
+        width:  104px;
+        height: 106px;
+}
+
+.iphone div {
+        width:  52px;
+        height: 53px;
+}
+
+#buttons div {
+        background-image:  url("http://augreal.mklab.iti.gr/api_Metaio_v2/IBS/arel/button2.png");
+        background-repeat: no-repeat;
+        background-size:   100%;
+	    float:             left;
+}
+
+#buttons #spacer {
+        background-image: none;
+}
+
+#buttons #left {
+        -webkit-transform: rotate( -180deg );
+        clear:             both;
+}
+
+#buttons #top {
+        -webkit-transform: rotate( -90deg );
+}
+
+#buttons #down {
+        -webkit-transform: rotate( 90deg );
+}
+
+
+
+
+

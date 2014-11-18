@@ -1,0 +1,55 @@
+
+customerid:2,registereduserid:8, T:2014-11-17 11:45:24, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-17 11:45:30, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-17 11:47:02, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-17 16:00:51, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-17 16:01:43, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-17 16:09:32, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-17 16:17:56, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-17 16:18:26, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-17 16:23:08, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-17 16:23:25, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-17 16:26:45, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-17 16:30:46, Details:Logout
+NewDay
+customerid:2,registereduserid:8, T:2014-11-18 07:59:55, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 08:16:17, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 08:16:22, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 08:16:31, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 08:16:36, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 08:16:54, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 08:17:09, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 08:17:11, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 08:18:33, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 08:23:12, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 09:04:11, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 09:05:50, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 09:16:41, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 09:17:29, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 09:20:33, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 09:20:36, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 09:57:49, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 09:57:55, Details:Added: 127
+customerid:2,registereduserid:8, T:2014-11-18 09:58:49, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 10:01:54, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 10:01:58, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 10:11:16, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 10:13:50, Details:Deleted: 127
+customerid:2,registereduserid:8, T:2014-11-18 10:15:49, Details:Delete Model 3 of AR Entity1
+customerid:2,registereduserid:8, T:2014-11-18 10:18:54, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-18 10:19:47, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-18 10:22:27, Details:Added: 128
+customerid:2,registereduserid:8, T:2014-11-18 10:22:31, Details:Deleted: 128
+customerid:2,registereduserid:8, T:2014-11-18 10:26:06, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 10:28:15, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 10:34:33, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-18 10:34:54, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-18 10:34:56, Details:edit: 1
+customerid:2,registereduserid:8, T:2014-11-18 10:45:14, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 10:45:20, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 11:37:27, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 11:37:34, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 11:37:59, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 11:38:05, Details:Logged in
+customerid:2,registereduserid:8, T:2014-11-18 11:38:11, Details:Logout
+customerid:2,registereduserid:8, T:2014-11-18 11:42:49, Details:Logged in

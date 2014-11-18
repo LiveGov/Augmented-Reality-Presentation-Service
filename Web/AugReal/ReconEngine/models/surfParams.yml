@@ -1,0 +1,5 @@
+%YAML:1.0
+hessianThreshold: 50
+octaves: 4
+octaveLayers: 2
+upright: 0

@@ -1,0 +1,179 @@
+body{ 
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#container
+{
+	width:100%;
+}
+
+#sidebar
+{
+	width:180px;
+	height:100%;
+	margin-right:5px;
+	vertical-align:top;
+	float:left;
+}
+
+#content
+{
+	float:left;
+	border-left: 3px double black;
+	padding-left:10px;
+}
+#sidemenu
+{
+	list-style:none;
+	padding:0px;
+}
+
+.method
+{
+	font-family:"Courier New", Courier, monospace;
+	font-size:22px;
+	background-color:#000;
+	color:#FFF;
+	border-radius:15px;
+	padding:10px 22px 10px 22px;
+	margin-bottom:30px;
+}
+
+
+
+h1
+{
+	text-align:center;
+}
+
+h1.sep
+{
+	border-bottom:thin solid black;
+	background-color:#acf;
+}
+
+h2 .title
+{
+margin-left:10px;
+}
+
+h2
+{
+margin-left:10px;
+}
+
+
+
+h3
+{
+	margin-left:20px;
+}
+
+
+
+/*
+p .description
+{
+	width:800px;
+}
+*/
+
+table
+{
+border-collapse:collapse;
+}
+
+
+#deftable
+{
+	width:100%;
+}
+
+#deftable th
+{
+	border:1px solid gray;
+	padding: 10px;
+	background-color:#EEE;
+	text-align:left;
+	font-size:18px;
+}
+#deftable, #deftable tr, #deftable td
+{
+border:1px solid lightgray;
+font-size:16px;
+padding: 5px;
+vertical-align:top;
+}
+
+.parName
+{
+	font-family:"Courier New", Courier, monospace;
+	color:#00C;
+}
+
+.apiURL
+{
+	width:800px;
+	padding: 10px;
+}
+
+#apiURLContainer
+{
+	width:80%;
+	padding: 10px;
+	margin-left:50px;
+	border: 2px solid black;
+	background-color:#EEE;
+}
+#desc {background: #fff; color: #000; font-weight:normal; padding-left:40px; font-size:13pt}
+
+/*#deftable tr > td:first-child { color: #69e;} /* first column */
+
+#expltable { border:0px; padding: 10px; width: 800px}
+
+#expltable tr > td {   padding-bottom: 20px }
+
+
+#expltitle   {background: #ccc; color: #69e; font-weight:bold;  padding-left:20px; font-size:15pt}
+#explcontent {background: #fff; color: #000; font-weight:normal; padding-left:40px; font-size:11pt}
+
+ul
+{
+margin-top: 5px;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+
+figure .image {
+    width: 100%;
+}
+
+figure {
+    text-align: center;
+    display: table;
+    max-width: 30%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto; /* not needed unless you want centered */
+}
+
+
+#indexTable table, tr, td
+{
+	border:1px solid lightgray;
+	font-size:16px;
+	padding: 5px;
+	vertical-align:top;
+
+}
+
+th
+{
+	border:1px solid gray;
+	padding: 10px;
+	background-color:#EEE;
+	text-align:left;
+	font-size:18px;
+}

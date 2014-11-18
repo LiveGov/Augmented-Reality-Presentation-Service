@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results trackingurl="GPS">
+	<object id="1">
+		<title><![CDATA[Hotel Hello World]]></title>
+		<thumbnail><![CDATA[http://dev.junaio.com/publisherDownload/thumb_a1.png]]></thumbnail>
+		<icon><![CDATA[http://dev.junaio.com/publisherDownload/icon_a1.png]]></icon>
+		<location>
+			<lat>40.5678</lat>
+			<lon>22.99</lon>
+			<alt>70</alt>
+		</location>
+		<popup>
+			<description><![CDATA[If I see this then I have done something.]]></description>
+			<buttons>
+				<button id="url" name="Website"><![CDATA[http://augreal.mklab.iti.gr]]></button>
+			</buttons>
+		</popup>
+	</object>
+</results>

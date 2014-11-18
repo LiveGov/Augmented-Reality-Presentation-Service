@@ -1,0 +1,153 @@
+<html >
+
+<header>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+</header>
+
+<body>
+
+<h1>iOS client</h1><br />
+
+Quick Guide to build an iPhone AR app using the MetaioSDK v5 for the needs of L+G project<br/><br/>
+
+<h2 class="title">Description</h2>
+
+<p id="desc">
+The iPhone AR Client consists of 1 template and 2 library projects:
+<ol>
+<li>LG_AR_Template</li>
+<li>metaioSDK.framework, and </li>
+<li>ASIHTTPRequest.framework.</li>
+</ol>
+
+<br/>
+LG_AR_Template is the template to start working on for each use case. The metaioSDK.framework is 
+the official library by Metaio, and the ASIHTTPRequest.framework is an http library for internet 
+communication found in [https://github.com/pokeb/asi-http-request]. As it is seen, there is no 
+intermediate library for connecting template with metaioSDK, but the necessary classes are 
+inside the template. The problem for making an intermediate library for iOS is that MetaioSDK.framework 
+needs several configurations that will make it hard to support in any future MetaioSDK releases.
+</p>
+
+<h2 class="title">Main classes</h2>
+
+<p id="desc">
+<code>ARELViewController.mm</code> is the file that creates the AR views and supports 5 AR "modes". 
+The first 3 modes are used in L+G project and correspond to the 3 modes of the Android version, 
+whereas the other 2 are modes are supported and they are described for reader's convenience. Namely:
+<ol>
+<li>Location Based with custom AREL interpreter: This creates an AR View without using the 
+Metaio AREL interpreter but with an XML parser by CERTH which allows for high level of 
+customizability e.g. custom billboards, radar, identifying the touched geometry etc. This mode 
+requires as input the XML of the AR-Server LBS php script.</li>
+<li>Image Based (Tracking application, IBS): This view uses a tracking image to render 3d objects on the user's screen.</li>
+<li>Image Based Recognition (Object Recognition, IBS*): This view captures frames from the camera and using the 
+visual recognition service by CERTH recognizes an object. A recognition score is shown in the screen 
+and if it exceeds the 0 threshold, a related 3d model is rendered on the center of the screen.</li>
+<br/>
+The 2 modes that are not used in L+G project:
+<br/>
+<li>Location Based for other data available in memory: This demonstrates how to create an AR View with your own 
+data which can be retrieved from a different source other than AR-Server.</li>
+<li>Location Based with Metaio's AREL interpreter: A Location Based AR view using the Metaio's AREL interpreter. 
+This view doesn't allow much customization of the view.</li>
+</ol>
+
+Detailed examples on how to instantiate this controller are shown in <code>ViewController.mm</code> file from 
+the metaio XCode project (see <code>startARWithOptions</code> function). Depending on your location 
+you may not be able to see any billboards/3d models in the location based AR View because the distance 
+of the entities exceeds a certain threshold. This threshold prevents data to be rendered on the 
+screen. To configure the rendering distance threshold you may need to call the following functions 
+(please refer to the metaioSDK documenation for this; the default max distance is set to 10 km):
+<ol>
+<li>m_metaioSDK->setRendererClippingPlaneLimits</li>
+<li>m_metaioSDK->setLLAObjectRenderingLimits</li>
+</ol>
+For location based applications you will have to define a View Controller class to launch 
+when the geometry is touched. In the <code>touchesBegan</code> method in <code>ARELViewController.mm</code> and define your own.
+</p>
+
+
+
+<h2 class="title">Install and customize</h2>
+
+<h3>Installation procedure</h3>
+
+Three projects should be included in the XCode workspace:
+<ol>
+<li>LG_AR_Template</li>
+<li>metaioSDK.framework (Metaio library, included in SVN), and</li> 
+<li>ASIHTTPRequest.framework (included in SVN)).</li>
+</ol>
+
+<p id="desc">
+Add the following frameworks to your project's ""Link binary with libraries"" build phase: 
+metaioSDK.framework, ASIHTTPRequest.framework, CoreLocation.framework, libz.dylib, 
+libxml2.dylib, CoreMotion.framework, OpenGLES.framework, AudioToolbox.framework, 
+QuartzCore.framework, CoreVideo.framework, CoreMedia.framework, AVFoundation.framework, 
+MediaPlayer.framework, EventKit.framework, Security.framework, CFNetwork.framework, 
+SystemConfiguration.framework, MobileCoreServices.framework, UIKit.framework, 
+Foundation.framework, CoreGraphics.framework. These are shown in the Figure 1.
+<p>
+
+<figure>
+<img class="displayed" src="images/iOSlibs.png" width="600" /><br/>
+<figcaption>Figure 1: The frameworks required for iOS.</figcaption></br><br/>
+</figure>
+
+<p id="desc">
+In the build settings of the target specify "Framework search paths"" as <code>$(SRCROOT)/</code> as shown in Figure 2:
+</p>
+
+<figure>
+<img class="displayed" src="images/iOSPath.png" width="500" /><br/>
+<figcaption>Figure 2: Path modifications to find frameworks.</figcaption></br>
+</figure>
+
+<p id="desc">Copy-paste the following files from the Metaio project into your workspace: 
+MetaioSDKViewController.mm; MetaioSDKViewController.h; MetaioSDKViewController.xib, EAGLView.h; 
+EAGLView.mm; XMLReader.h; XMLReader.mm; ARELViewController.h; 
+ARELViewController.mm; ARELViewController.xib; ic_radar.png; red.png; poi.bundle; 
+cancel.png; 3dON.png; 3dOFF.png.
+</p>
+
+<p id="desc">
+Navigate to the project Build Phases again and add the <code>-fno-objc-arc</code> compiler flags to the files 
+<code>EAGLView.mm</code> and <code>MetaioSDKViewController.mm</code> as shown in Figure 3:
+</p>
+
+<figure>
+<img class="displayed" src="images/iOSCompiler.png" width="600" /><br/>
+<figcaption>Figure 3: Compiler flags for iOS.</figcaption></br>
+</figure>
+
+<p id="desc">
+In the "Build Settings"" of the project find the Apple LLVM compiler section and change the following 
+to "Compiler Default" as shown below:
+</p>
+
+<figure>
+<img class="displayed" src="images/iOSCompiler2.png" width="600" /><br/>
+<figcaption>Figure 4: Compiler setup for iOS.</figcaption></br>
+</figure>
+
+<p id="desc">
+Every .m file in your project that references c++ code (e.g. ARELViewController) should be renamed with the .mm extension.
+</p>
+
+<h3>Customize</h3> 
+
+<p id="desc">
+Mobile AR client iPhone requires a MetaioSDK api key in order to be functional. 
+An account to MetaioSDK site is mandatory [www.metaio.com/sdk]. Go to "My Apps"" tab 
+and in Application name put the name of your application, e.g. "LG_CityPlanning", 
+and in Application identifier the package name, e.g. com.mycompany.myapp. 
+The SDK version that should be selected is 5.X. For iPhone, specify the Metaio API key 
+in the file <code>MetaioSDKViewController.mm</code> and search for the <code>#define</code> string on 
+top of the file. The projects already include a valid key but it should change if the 
+project packages or names will be renamed.
+</p>
+
+</body> 
+</html>

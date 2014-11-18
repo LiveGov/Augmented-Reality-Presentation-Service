@@ -1,0 +1,18 @@
+<?php
+
+$res = exec("./recognize -r 1.jpg", $output, $return_var);
+
+
+print($res);
+print("<br>");
+print($output);
+print("<br>");
+print_r(array_keys($output));
+print("<br>");
+print_r(array_values($output));
+print("<br>");
+print($return_var);
+
+
+
+?>

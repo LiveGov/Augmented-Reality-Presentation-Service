@@ -1,0 +1,149 @@
+<html >
+
+<header>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+</header>
+
+<body>
+
+<h1>Android client</h1><br />
+
+Quick Guide to build an Android AR app for urban planning using the MetaioSDK v5 <br/><br/>
+
+<h2 class="title">Description</h2>
+
+<p id="desc">
+CERTH has developed a library (LG_CERTH_Metaio_lib) to be used in any template app (e.g. LG_CityPlanning) in order 
+to implement AR. The library acts as an intermediate connector between the MetaioSDK5 library and the template. 
+One feature of the CERTH library is that implements ARView as a fragment that can be inserted into a tabhost next 
+to a map and a list view. A functionality that was not included in the MetaioSDK5. 
+An additional innovation is that both Location Based AR and Image Based AR functionalities are in the same fragment. 
+The user can switch between the two ARs with a toggle button without having to reload the metaioSDK object.
+</p>
+
+<h2 class="title">Visualization of main classes</h2>
+
+<p id="desc">
+The app visualizations are shown in Figure 1. The Template consists of the main activity implemented by 
+FActivity_Main.java which contains the tabhost for 'Map' implemented by Fragment_Map, 'AR' implemented 
+by Fragment_AR_Twix.java, and 'List' implemented by Fragment_List.java fragment.
+</p>
+
+<img src="images/AR_Developer_Map_colorized.png" height="500" /><br/>
+Figure 1: Visualization of classes of the Template and the two libraries.
+
+<p id="desc">
+The Fragment_AR_Twix.java implements both LBS and IBS AR by the following way. The fragment starts 
+by loading the LBS channel and showing only the billboards and two buttons:
+
+The first button is a Toggle button (togg3d) which toggles between LBS 3d models and LBS billboards. The second 
+button switches between LBS, IBS, and IBS* channels.
+In the LBS mode the actions are coded in the following way:
+<ol type="A" style="margin-left:50px">
+<li>In Billboard mode, by clicking on a billboard then you go to ActivityPosterior.java;</li>
+<li>In LBS 3d mode, by clicking on an Entity (3d model)</li>
+    <ol type="a">
+	<li>If the clicked Entity has no alternative 3d model then go to ctivityPosterior.java;</li>
+	<li>If the clicked model has alternative 3d models then a new button (bt_models) 
+	appears named as 'Shift models' which can be used to replace currently clicked model with the other alternative model;</li>
+	<li>If the clicked Entity is 'reclicked' then go to ActivityPosterior.java;</li>
+	<li>If another Entity is clicked then the 'Shift model' refers to the newly clicked;</li>
+	</ol>
+</ol>
+
+LBS (AR Type button) switch between LBS, IBS, and IBS*. In IBS models are clickable and they lead to ActivityPosterior. 
+In IBS* mode, a new button name as "Recon" appears. 
+Recon button sends the current preview screen image to the remote server for recognition. If the image is recognized to belong to an Entity
+(positive recognition score) and the Entity is within the range of the downloaded data, then the Entity appears in ActivityPosterior. 
+
+CERTH library includes the ARViewFragment.java that enables the implementation of AR as a fragment. 
+The object metaioSDK is available through the Interface IMetaioSDKAndroid.java.
+</p>
+
+
+<h2 class="title">Data</h2>
+
+<p id="desc">
+Most information about the urls and the local paths is included in: <br/>
+
+<code>LG_CERTH_Metaio_lib.com.lg.ar_Core.Constants_API.java</code> <br/>
+
+and the main function to download and store data is the:<br/>
+
+<code>LG_CityPlanning.com.lg.ar_Template.FetchResources.java</code>
+
+
+
+<ol type="a">
+   <li><b>Download Data</b><br/><br/>
+   
+   The data is downloaded from the AR Server using the AREL api.<br/>
+		<code>
+		ServerName = "http://augreal.mklab.iti.gr";<br/>
+		url_php_LBS = ServerName + "/api_AREL/LBS/index.php";<br/>
+		url_php_IBS = ServerName + "/api_AREL/IBS/index.php";<br/>
+		</code><br/>
+		The main function that performs asynchronous downloading and local storing of data is the 
+		FetchResources.java that it is included in the Template.
+   
+   </li><br>
+   <li> <b>Store data locally</b><br/><br/>
+   
+		The main folder is the:</br>
+		<code>localFolderSTR = "sdcard0/data/MetaioSDK";</code><br/><br/>
+		The xmls are stored in: <br/>
+		<code>fn_local_LBS_xml = localFolderSTR + "/LBS/arel.xml";
+				fn_local_IBS_xml = localFolderSTR + "/IBS/arel.xml";</code><br/><br/>
+
+      
+		The 3d models and their images are in:<br/>
+		<code>folder_Models3D = localFolderSTR + "/Models3D_DB";</code>
+   
+   </li><br/>
+
+
+	  <li> <b>Use data</b><br/><br/>
+ 
+ 		The data is loaded into memory by the objects found the FetchResources.java:<br/>
+		<code>List&lt;Entity> entitiesLBS</code><br/>
+		<code>List&lt;Entity> entitiesIBS</code><br/><br/>
+		
+		Where an Entity contains: Id, title, iconurl, iconfile, location, description, modelurl, modelfile, type, trackingurl, nModels3d.<br/>
+		See in javadoc for more details about each field.
+      </li>
+      
+</ol>
+
+</p>
+
+<h2 class="title">Install and customize</h2>
+
+<h3>Installation procedure</h3>
+
+
+<ol>
+<li>Import all three projects into your eclipse workspace.</li>
+<li>Go to 'LG_CERTH_Metaio_lib' and import 'MetaioSDK5' as library in [Project Properties->Android]</li>
+<li>Go to 'LG_CityPlanning' and import 'LG_CERTH_Metaio_lib' as library in [Project Properties->Android]</li>
+</ol>
+
+<p id="desc">
+If there are errors: Clean all projects by [Project->Clean], delete 'gen' folders in each project, 
+close all projects and reopen them. Then wait 5 seconds until the 'gen' folder is generated.<br/><br/>
+You can now run the 'LG_CityPlanning'.
+</p>
+
+<h3>Customize</h3> 
+
+<p id="desc">
+The MetaioSDK API key can be found in 'LG_CityPlanning' -> res -> values -> signature. <br/><br/>
+
+It depends on the package name of the project which is found in Android Manifest, and it is 'com.lg.ar_Template', 
+and it also depends on the appname 'CityPlanning' which is found in res->values->strings.
+By changing one of the above, the AR functionality will not be available. In order to generate 
+a new API key, go to metaioSDK site: <a href="http://www.metaio.com/sdk/">http://www.metaio.com/sdk/</a> , log in and follow the instructions.
+</p>
+
+</body> 
+</html>

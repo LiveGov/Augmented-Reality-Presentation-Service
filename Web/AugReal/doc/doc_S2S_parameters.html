@@ -1,0 +1,73 @@
+<html >
+
+<header>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+</header>
+<body>
+
+	<h1>Parameters for php queries</h1>
+	<br />
+	<h2 class="title">Description</h2>
+	<p id="desc">These parameters should be used in a php url to query successfully the database.</p>
+
+<h2 class="title">Textual data</h2>
+
+<table border="1" >
+    <tr><th>Parameters </td><th>Description                    </td><th>Example                    </td></tr>
+    <tr><th colspan="3"> API KEY </th></tr> 
+    <tr><td>apikey     </td><td>The private key to insert/edit data</td><td>XXXXXXXXXXXXX               </td></tr>
+    <tr><th colspan="3"> Required for Insert</th></tr>
+    <tr><td>title      </td><td>The title of the Entity        </td><td>New School                 </td></tr> 
+    <tr><td>description</td><td>The description of the Entity  </td><td>A new school is planned ...</td></tr> 
+    <tr><td>author     </td><td>Who reported the solution      </td><td>John Smith                 </td></tr>
+    <tr><th colspan="3"> Several Ids </th></tr> 
+    <tr><td>id         </td><td>The id of the entity           </td><td>1 (automatic for Insert)</td></tr>
+    <tr><td>id_external</td><td>Id to link with other server   </td><td>12345                      </td></tr>
+    <tr><td>id_app     </td><td>Id of the Application 1->YUCAT, 2->BISCAYTIK, 3->MATTERSOFT</td><td>1</td></tr> 
+    <tr><td>id_categ   </td><td>Category id                    </td><td>7                           </td></tr>
+    <tr><td>id_VRec    </td><td>Id of Visual recognition model</td><td>10                           </td></tr>
+    <tr><td>ids_qs     </td><td>Ids of the questions to associate</td><td>1,2,3,4                   </td></tr>
+
+    <tr><th colspan="3"> Location related </th></tr>
+    <tr><td>latitude   </td><td>Latitude in decimal degrees   </td><td>40.5121                      </td></tr> 
+    <tr><td>longitude  </td><td>Longitude in decimal degrees  </td><td>23.0455                      </td></tr>
+    <tr><td>altitude   </td><td>Altitude in meters            </td><td>150                          </td></tr>
+    <tr><td>street     </td><td>Name of the street            </td><td>Park%20Avenue (%20 is for space)</td></tr> 
+    <tr><td>number     </td><td>Street number                  </td><td>12</td></tr>
+    <tr><td>postal     </td><td>Postal code                    </td><td>51231</td></tr>
+    <tr><td>country    </td><td>Country name                   </td><td>Greece</td></tr> 
+</table>
+
+<h2>Multimedia data</h2>
+
+<h2 class="title">Description</h2>
+	<p id="desc">These parameters should be urls that are used to transfer files from the server to the AR-Server.</p>
+
+<table border="1" >
+    <tr><th>Parameters </td><th>Description                    </td><th>Example                    </td></tr>
+    <tr><th colspan="3">General Image for background for web 3d view  </th></tr>
+    <tr><td>jpg        </td><td>Background image (urlpath)    </td><td>http://abcd.com/myim.jpg     </td></tr> 
+
+    <tr><th colspan="3">3D models and screenshots</th></tr>
+    <tr><td>FTP Transfer fields</td><td>Description</td><td>Example</td></tr>
+        
+    <tr><td>3dobj1     </td><td>File of 1st 3D Model in Wavefront obj format</td><td>http://abcd.com/myim.obj  </td></tr>
+    <tr><td>3dmtl1     </td><td>File of 1st material file of 3D Model</td><td>http://abcd.com/myim.mtl  </td></tr>
+    <tr><td>3dzip1     </td><td>File of 1st model textures in zipped folder containing textures e.g. image/texture1.jpg</td><td>http://abcd.com/myim.zip</td></tr>
+    <tr><td>3djpg1     </td><td>File of 1st model screenshot</td><td>http://abcd.com/my___1.jpg  </td></tr>  
+
+	<tr><td>3dobj2     </td><td>File of 2nd 3D Model in Wavefront obj format</td><td>http://abcd.com/myim.obj  </td></tr>
+    <tr><td>3dmtl2     </td><td>File of 2nd material file of 3D Model</td><td>http://abcd.com/myim.mtl  </td></tr>
+    <tr><td>3dzip2     </td><td>File of 2nd model textures in zipped folder containing textures e.g. image/texture1.jpg</td><td>http://abcd.com/myim.zip</td></tr>
+    <tr><td>3djpg2     </td><td>File of 2nd model screenshot</td><td>http://abcd.com/my___1.jpg  </td></tr>
+
+	<tr><td>3dobj3     </td><td>File of 3rd 3D Model in Wavefront obj format</td><td>http://abcd.com/myim.obj  </td></tr>
+    <tr><td>3dmtl3     </td><td>File of 3rd material file of 3D Model</td><td>http://abcd.com/myim.mtl  </td></tr>
+    <tr><td>3dzip3     </td><td>File of 3rd model textures in zipped folder containing textures e.g. image/texture1.jpg</td><td>http://abcd.com/myim.zip</td></tr>
+    <tr><td>3djpg3     </td><td>File of 3rd model screenshot</td><td>http://abcd.com/my___1.jpg  </td></tr>
+  </table>
+  
+  </body>
+   
+</html>
