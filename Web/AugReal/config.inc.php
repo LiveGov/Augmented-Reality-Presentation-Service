@@ -10,7 +10,7 @@
 
   /* Pre-define connection to the remote Service Center (authentication, billing etc.) */
   const _sc_username  = 'ar_api_user';
-  const _sc_password  = 'certh';
+  const _sc_password  = 'myremotepassword';
   const _sc_url       = "https://urbanplanning.yucat.com/servicecenter/api/";
   const _sc_url_diag= "https://testservicecenter.yucat.com/servicecenter/api/diagnostics/";
   const _sc_customerid= 2; // Urban planning
