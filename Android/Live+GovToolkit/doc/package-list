@@ -1,0 +1,9 @@
+eu.liveGov.libraries.livegovtoolkit.Utils
+eu.liveGov.libraries.livegovtoolkit.activities_fragments
+eu.liveGov.libraries.livegovtoolkit.helper
+eu.liveGov.libraries.livegovtoolkit.interfaces
+eu.liveGov.libraries.livegovtoolkit.location
+eu.liveGov.libraries.livegovtoolkit.objects
+eu.liveGov.libraries.livegovtoolkit.objects.questionaire
+eu.liveGov.libraries.livegovtoolkit.objects.questionaireResult
+eu.liveGov.libraries.livegovtoolkit.view.questionaireResult

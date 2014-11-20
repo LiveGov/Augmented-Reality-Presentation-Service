@@ -1,0 +1,7 @@
+<resources>
+    <string name="threeD">3D</string>
+    <string name="billboard">Billboard</string>
+    <string name="scan">Scan</string>
+    <string name="nearby">Nearby</string>
+    <string name="shake">Shake device to update location</string>
+</resources>

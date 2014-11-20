@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Urban Planning - Gordexola</string>
+    
+    <string name="about_title">About</string>
+    <string name="about_description">This prototype application is developed for the municipality of Gordexola.</string>
+    <string name="about_menu">About</string>
+    <string name="User_information">User information</string>
+    <string name="myloc">My Location</string>
+    <string name="myData">Data</string>
+    <string name="really_quit">Are you sure you want to close the application?</string>
+    <string name="quit_title">Close the application.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="location_not_enabled">This application needs location data with High Accuracy (GPS, Wi-fi, and mobile networks) in order to work correctly. Do you want to enable it?</string>
+    <string name="wifi_recommend">It is recommendend for the first time to run the app with Wifi because about XXX MBytes will be downloaded</string>
+    <string name="open_location_settings">Open location settings</string>
+    <string name="no_internet">This application needs internet in order to work correctly. Please turn on your internet connection.</string>
+    <string name="turned_on_internet">I have turned my internet on</string>
+    <string name="continuewithtelephony">Continue with Telephony</string>
+    <string name="quit">Quit</string>
+</resources>

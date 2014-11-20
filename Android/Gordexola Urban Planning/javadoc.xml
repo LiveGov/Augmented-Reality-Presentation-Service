@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="C:\Program Files\adt-bundle-windows-x86\sdk\platforms\android-16\android.jar;
+            libs/libGoogleAnalyticsServices.jar;
+        	..\LG_CERTH_Metaio_lib\bin\lg_certh_metaio_lib.jar;
+        	C:\Users\jimver_user_laptop\Documents\metaio\metaio SDK 5.5.2\_Android\metaioSDK\libs\metaiosdk.jar;
+        	..\Live+GovToolkit\bin\live+govtoolkit.jar;
+        	..\Live+GovToolkit\libs\slf4j-api-1.7.5.jar;
+        	..\Live+GovToolkit\libs\logback-android-1.0.10-2.jar;
+        	..\metaioSDK\libs\android-support-v4.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" 
+            nonavbar="false" notree="false" 
+            packagenames="eu.liveGov.urbanplanning.gordexola,eu.liveGov.gordexola.urbanplanning.activities" 
+            source="1.7" sourcepath="gen;src" splitindex="true" use="true" version="true">
+        </javadoc>
+    </target>
+</project>

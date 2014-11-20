@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="eu.liveGov.gordexola.urbanplanning.activities.SplashScreen" >
+
+      <ImageView
+        android:id="@+id/imv"
+        android:layout_width="126dp"
+        android:layout_height="181dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:src="@drawable/gordexola" />
+
+    <TextView
+        android:id="@+id/splashTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:paddingBottom="30dp"
+        android:keepScreenOn="true"
+        android:text="Gordexola"
+        android:textColor="#ccc"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true"
+             classpath="..\metaioSDK\libs\android-support-v4.jar;
+             C:\Program Files\adt-bundle-windows-x86\sdk\platforms\android-18\android.jar;
+             C:\Users\jimver_user_laptop\Documents\metaio\metaio SDK 5.5.2\_Android\metaioSDK\libs\metaiosdk.jar;
+             libs\achartengine.jar;
+             libs\gson-2.2.4.jar;
+             libs\httpmime-4.2.5.jar;
+             libs\libGoogleAnalyticsServices.jar;
+             libs\logback-android-1.0.10-2.jar;
+             libs\osmdroid-android-4.1.jar;
+             libs\slf4j-api-1.7.5.jar;
+             ..\LG_CERTH_Metaio_lib\bin\lg_certh_metaio_lib.jar" 
+             destdir="doc" doctitle="Live+Gov Android Toolkit for Live+Gov project - documentation" 
+             nodeprecated="false" nodeprecatedlist="true" noindex="false" nonavbar="false" notree="false" 
+             packagenames="eu.liveGov.libraries.livegovtoolkit.activities_fragments,eu.liveGov.libraries.livegovtoolkit.helper,
+             eu.liveGov.libraries.livegovtoolkit.interfaces,eu.liveGov.libraries.livegovtoolkit.location,
+             eu.liveGov.libraries.livegovtoolkit.objects,eu.liveGov.libraries.livegovtoolkit.objects.questionaire,
+             eu.liveGov.libraries.livegovtoolkit.objects.questionaireResult,eu.liveGov.libraries.livegovtoolkit.Utils,
+             eu.liveGov.libraries.livegovtoolkit.view.questionaireResult,eu.liveGov.libraries.livegovtoolkit.view.questionaire" 
+             source="1.7" sourcepath="src;gen" splitindex="true" use="true" version="true">
+            <link href="file:/C:/Users/jimver_user_laptop/Desktop/VerveridisCode/DEMOS/AndroidApps/LG_CERTH_Metaio_lib/doc/"/>
+            <link href="file:/C:/Progra~1/adt-bundle-windows-x86/sdk/docs/reference/"/>
+        </javadoc>
+    </target>
+</project>
+

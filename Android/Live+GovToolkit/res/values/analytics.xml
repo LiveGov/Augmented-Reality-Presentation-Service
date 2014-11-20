@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Replace placeholder ID with your tracking ID -->
+    <string name="ga_trackingId">UA-51509047-1</string>
+
+    <!-- Enable Activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    
+    <!--Enable automatic exception tracking-->
+  	<bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- Enable debug -->
+    <bool name="ga_debug">true</bool>
+
+    <!-- The screen names that will appear in your reporting -->
+    <string name="eu.liveGov.libraries.livegovtoolkit.activities.DetailActivity">Detail Activity</string>
+    <string name="eu.liveGov.libraries.livegovtoolkit.activities.UserInformationActivity">UserInformation Activity</string>
+    
+    <string name="eu.liveGov.libraries.livegovtoolkit.fragment.ARFragment">AR Fragment</string>
+    <string name="eu.liveGov.libraries.livegovtoolkit.fragment.MapFragment">Map Fragment</string>
+
+    <!--
+        The inverval of time after all the collected data
+        should be sent to the server, in seconds.
+    -->
+    <integer name="ga_dispatchPeriod">5</integer>
+
+</resources>

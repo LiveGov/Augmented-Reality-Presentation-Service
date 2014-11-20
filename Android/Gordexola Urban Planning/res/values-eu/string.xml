@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Urban Planning - Gordexola</string>
+	<string name="about_title">Zeri buruz</string>
+	<string name="about_description">Prototipo hau Gordexola herrirako garatu da.</string>
+	<string name="about_menu">Zeri buruz</string>
+	<string name="User_information">Erabiltzailearen informazioa</string>
+	<string name="myloc">Nire lokalizazioa</string>
+	<string name="myData">Datuak</string>
+	<string name="really_quit">Ziur al zaude aplikazioa itxi nahi duzula?</string>
+	<string name="quit_title">Aplikazioa itxi.</string>
+	<string name="yes">Bai</string>
+	<string name="no">Ez</string>
+	<string name="cancel">Utzi</string>
+	<string name="location_not_enabled">Aplikazio honek kokapenari buruzko doitasun handiko informazioa behar du (GPS, Wi-fi eta sare mugikorrak) behar bezala izateko. Gaitu nahi dituzu?</string>
+	<string name="wifi_recommend">Aplikazioa lehenengo aldiz exekutatzerakoan wifiarekin konektaturik egitea gomendatzen da, XXX MBytes, gutxi gorabehera deskargatuko direlako</string>
+	<string name="open_location_settings">Lokalizazio ezarpenak ireki.</string>
+	<string name="no_internet">Aplikazio honek internet behar du ondo funtzionatzeko. Mesedez internetera konekta zaitez. </string>
+	<string name="turned_on_internet">Internetera konektatuta nago.</string>
+	<string name="continuewithtelephony">Segi telefoniarekin</string>
+	<string name="quit">Itxi</string>
+</resources>

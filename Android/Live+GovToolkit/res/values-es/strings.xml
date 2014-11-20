@@ -1,0 +1,22 @@
+<resources>
+    <string name="questionaire_submit_button">Enviar</string>
+    <string name="user_information_title">Información de usuario</string>
+    <string name="user_information_button_cancel">Cancelar</string>
+    <string name="user_information_button_save">Guardar</string>
+    <string name="user_information_intro_text">Por favor, proporcione algunos detalles sobre su información personal.</string>
+   	<string name="user_info_cancel_button">Cancelar</string>
+	<string name="user_info_save_button">Guardar</string>
+	<string name="user_information_failed_to_load_questionaire">Error al cargar la información del usuario. Por favor, intente más tarde.</string>
+	<string name="questionaire_result_total">Número total de cuestionarios presentados: </string>
+	<string name="detailfragment_no_userinfo_title">La información de usuario no ha sido completada</string>
+	<string name="detailfragment_no_userinfo_Message">Necesitamos un poco más de información de usuario para enviar este cuestionario.</string>
+	<string name="detailfragment_no_anonymous_id_title">No se pudo enviar el cuestionario.</string>
+	<string name="detailfragment_failed_to_load_questionaire">Error al cargar el cuestionario. Por favor, inténtelo más tarde.</string>
+	<string name="detailfragment_no_anonymous_id_Message">Por favor, inténtelo más tarde.</string>
+	<string name="detailfragment_failed_to_send_title">No se pudo enviar el cuestionario.</string>
+	<string name="detailfragment_failed_to_send_Message">Por favor, inténtelo más tarde.</string>
+	<string name="loc_low_accuracy">La experiencia ofrecida no es la esperada porque la precisión de tu ubicación es demasiado baja (XXX metros).</string>
+    <string name="loc_old_timestamp">La experiencia ofrecida no es la esperada porque el sello de tiempo es demasiado antiguo (de hace XXX minutos)</string>
+	<string name="loc_improved_accuracy">La precisión de la ubicación ha mejorado a XXX metros.</string>
+	<string name="tempwarn">Tu dispositivo está alcanzando una temperatura demasiado alta: XXXXX. Por favor abandona la vista de realidad aumentada y vuelve pasados unos minutos para permitir que se enfríe.</string>
+</resources>

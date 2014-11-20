@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+	
+	    <TextView
+	        android:id="@+id/questionaire_result_description"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="7dp"
+	        android:paddingBottom="10dp"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	   <!--  <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="5dp"
+	        android:padding="7dp"
+	        android:orientation="horizontal"
+	        >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:paddingRight="5dp"
+		        android:text="@string/questionaire_result_total"/>    
+
+	        <TextView
+	            android:id="@+id/questionaire_result_total"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+
+	    </LinearLayout> -->
+	    
+	    <LinearLayout
+	        android:id="@+id/questionaire_result_catagory_holder"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="7dp"
+	        android:paddingBottom="2dp"
+	        android:paddingTop="5dp" >
+	        
+	       </LinearLayout>
+
+    </LinearLayout>
+    
+
+</ScrollView>

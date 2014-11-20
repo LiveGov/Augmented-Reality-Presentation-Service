@@ -1,0 +1,7 @@
+<resources>
+    <string name="threeD">3D</string>
+    <string name="billboard">Etiketak</string>
+	<string name="scan">Irudiaren arabera</string>
+	<string name="nearby">Hurbiltasunaren arabera</string>
+	<string name="shake">Gailua astindu kokapena eguneratzeko</string>
+</resources>

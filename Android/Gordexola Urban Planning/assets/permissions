@@ -1,0 +1,16 @@
+{
+    "permissions": [
+        {
+            "name": "api_account_permission_proposal",
+            "description": "Test proposal"
+        },
+              	{
+            "name": "api_account_permission_map",
+            "description": "Test map"
+        },
+      	{
+            "name": "api_account_permission_ar",
+            "description": "Test ar"
+        }
+    ]
+}

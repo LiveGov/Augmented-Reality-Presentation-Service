@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item android:id="@+id/User_information"
+              android:icon="@drawable/user_info"
+              android:title="@string/User_information" />
+      <item android:id="@+id/about_id"
+            android:icon="@drawable/about_icon"
+            android:title="@string/about_menu" />
+      <item android:id="@+id/myDebugItem_id"
+            android:icon="@drawable/about_icon"
+            android:title="Debug information" />
+      <!-- 
+      <item android:id="@+id/myloc_id"
+            android:icon="@drawable/about_icon"
+            android:title="@string/myloc" />
+
+             
+      <item android:id="@+id/myData_id"
+            android:icon="@drawable/about_icon"
+            android:title="@string/myData" />
+                         -->
+</menu>

@@ -1,0 +1,126 @@
+{
+    "categories": [
+        {
+            "id": 0,
+            "name": "eParticipation questions",
+            "description": "Clearly define the final objective of the eParticipation process",
+            "questions": [
+				{
+                    "id": 0,
+                    "questiontext": "Resident or visitor",
+                    "displaytype": 3,
+                    "answeroptions": [
+                        {
+                            "id": 0,
+                            "answeroptiontext": "Resident",
+                            "selected": false
+                        },
+                        {
+                            "id": 1,
+                            "answeroptiontext": "Visitor",
+                            "selected": false
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "questiontext": "Do you find the location suitable for the walkway?",
+                    "displaytype": 0,
+                    "answeroptions": [
+                        {
+                            "id": 2,
+                            "answeroptiontext": "Yes",
+                            "selected": false
+                        },
+                        {
+                            "id": 3,
+                            "answeroptiontext": "No",
+                            "selected": false
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "questiontext": "How often would you use the pedestrian bridge?",
+                    "displaytype": 0,
+                    "answeroptions": [
+                        {
+                            "id": 4,
+                            "answeroptiontext": "0 I would never use it.",
+                            "selected": false
+                        },
+                        {
+                            "id": 5,
+                            "answeroptiontext": "1 time a day",
+                            "selected": false
+                        },
+                        {
+                            "id": 6,
+                            "answeroptiontext": "2 times a day",
+                            "selected": false
+                        },
+                        {
+                            "id": 7,
+                            "answeroptiontext": "3 times a day",
+                            "selected": false
+                        },
+                        {
+                            "id": 8,
+                            "answeroptiontext": "Over 3 times a day",
+                            "selected": false
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "questiontext": "Will it improve the city pedestrian communication facilities?",
+                    "displaytype": 0,
+                    "answeroptions": [
+                        {
+                            "id": 9,
+                            "answeroptiontext": "Yes",
+                            "selected": false
+                        },
+                        {
+                            "id": 10,
+                            "answeroptiontext": "No",
+                            "selected": false
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "questiontext": "What colour do you like best for the walkway?",
+                    "displaytype": 1,
+                    "answeroptions": [
+                        {
+                            "id": 11,
+                            "answeroptiontext": "White",
+                            "selected": false
+                        },
+                        {
+                            "id": 12,
+                            "answeroptiontext": "Gray",
+                            "selected": false
+                        },
+                        {
+                            "id": 13,
+                            "answeroptiontext": "Brown",
+                            "selected": false
+                        },
+                        {
+                            "id": 14,
+                            "answeroptiontext": "Blue",
+                            "selected": false
+                        },
+                        {
+                            "id": 15,
+                            "answeroptiontext": "Other",
+                            "selected": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

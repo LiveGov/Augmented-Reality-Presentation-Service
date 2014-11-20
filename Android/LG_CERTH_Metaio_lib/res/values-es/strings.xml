@@ -1,0 +1,7 @@
+<resources>
+    <string name="threeD">3D</string>
+    <string name="billboard">Etiquetas</string>
+    <string name="scan">Por imagen</string>
+    <string name="nearby">Por cercanía</string>
+    <string name="shake">Agita el dispositivo para actualizar la ubicación</string>
+</resources>

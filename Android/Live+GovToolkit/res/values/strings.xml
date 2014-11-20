@@ -1,0 +1,22 @@
+<resources>
+    <string name="questionaire_submit_button">Submit</string>
+    <string name="user_information_title">User information</string>
+    <string name="user_information_button_cancel">Cancel</string>
+    <string name="user_information_button_save">Save</string>
+    <string name="user_information_intro_text">Please provide some details about your personal information.</string>
+    <string name="user_info_cancel_button">Cancel</string>
+    <string name="user_info_save_button">Save</string>
+    <string name="user_information_failed_to_load_questionaire">Failed to load the user information. Please try later.</string>
+    <string name="questionaire_result_total">Total number of questionaires submitted: </string>
+    <string name="detailfragment_no_userinfo_title">User infromation not filled in</string>
+    <string name="detailfragment_no_userinfo_Message">We need some more user information to sumbit this questionnaire.</string>
+    <string name="detailfragment_no_anonymous_id_title">Failed to send this questionnaire</string>
+    <string name="detailfragment_failed_to_load_questionaire">Failed to load questionnaire. Please try later.</string>
+    <string name="detailfragment_no_anonymous_id_Message">Please try later.</string>
+    <string name="detailfragment_failed_to_send_title">Failed to send this questionnaire</string>
+    <string name="detailfragment_failed_to_send_Message">Please try later.</string>
+    <string name="loc_low_accuracy">The offered experience is not the expected one because the location accuracy is too low (XXX meters) </string>
+    <string name="loc_old_timestamp">The offered experience is not the expected one because the location timestamp is too old (XXX minutes ago)</string>
+    <string name="loc_improved_accuracy">Location accuracy has now improved to XXX meters</string>
+    <string name="tempwarn">Your device is reaching a temperature that is too high: XXXXX. Please leave the AR view and come back in a few minutes in order for it to cool down.</string>
+</resources>

@@ -1,0 +1,137 @@
+{
+	"questionaireresult":
+		{
+		    "description" : "This a small test description.",
+		    "filledincount" : 80,
+		    "categoriesresult": [
+		        {
+		            "id": 0,
+		            "name": "eParticipation questions",
+		            "description": "Clearly define the final objective of the eParticipation process",
+					"filledincount" : 80,
+		            "questionsresult": [
+						{
+		                    "id": 0,
+		                    "questiontext": "Resident or visitor",
+		                    "displaytype": "radio",
+							"filledincount" : 80,
+		                    "answeroptionsresult": [
+		                        {
+		                            "id": 0,
+									"filledincount" : 60,
+		                            "answeroptiontext": "Resident"
+		                        },
+		                        {
+		                            "id": 1,
+									"filledincount" : 20,
+		                            "answeroptiontext": "Visitor"
+		                        }
+		                    ]
+		                },
+		                {
+		                    "id": 1,
+		                    "questiontext": "Do you find the location suitable for the walkway?",
+		                    "displaytype": "radio",
+							"filledincount" : 80,
+		                    "answeroptionsresult": [
+		                        {
+		                            "id": 2,
+									"filledincount" : 40,
+		                            "answeroptiontext": "Yes"
+		                        },
+		                        {
+		                            "id": 3,
+									"filledincount" : 40,
+		                            "answeroptiontext": "No"
+		                        }
+		                    ]
+		                },
+		                {
+		                    "id": 2,
+		                    "questiontext": "How often would you use the pedestrian bridge?",
+		                    "displaytype": "radio",
+							"filledincount" : 80,
+		                    "answeroptionsresult": [
+		                        {
+		                            "id": 4,
+									"filledincount" : 10,
+		                            "answeroptiontext": "0 I would never use it."
+		                        },
+		                        {
+		                            "id": 5,
+									"filledincount" : 5,
+		                            "answeroptiontext": "1 time a day"
+		                        },
+		                        {
+		                            "id": 6,
+									"filledincount" : 35,
+		                            "answeroptiontext": "2 times a day"
+		                        },
+		                        {
+		                            "id": 7,
+									"filledincount" : 20,
+		                            "answeroptiontext": "3 times a day"
+		                        },
+		                        {
+		                            "id": 8,
+									"filledincount" : 10,
+		                            "answeroptiontext": "Over 3 times a day"
+		                        }
+		                    ]
+		                },
+		                {
+		                    "id": 3,
+		                    "questiontext": "Will it improve the city pedestrian communication facilities?",
+		                    "displaytype": "radio",
+							"filledincount" : 80,
+		                    "answeroptionsresult": [
+		                        {
+		                            "id": 9,
+									"filledincount" : 70,
+		                            "answeroptiontext": "Yes"
+		                        },
+		                        {
+		                            "id": 10,
+									"filledincount" : 10,
+		                            "answeroptiontext": "No"
+		                        }
+		                    ]
+		                },
+		                {
+		                    "id": 4,
+		                    "questiontext": "What colour do you like best for the walkway?",
+		                    "displaytype": "radio",
+							"filledincount" : 80,
+		                    "answeroptionsresult": [
+		                        {
+		                            "id": 11,
+									"filledincount" : 30,
+		                            "answeroptiontext": "White"
+		                        },
+		                        {
+		                            "id": 12,
+									"filledincount" : 20,
+		                            "answeroptiontext": "Gray"
+		                        },
+		                        {
+		                            "id": 13,
+									"filledincount" : 10,
+		                            "answeroptiontext": "Brown"
+		                        },
+		                        {
+		                            "id": 14,
+									"filledincount" : 10,
+		                            "answeroptiontext": "Blue"
+		                        },
+		                        {
+		                            "id": 15,
+									"filledincount" : 10,
+		                            "answeroptiontext": "Other"
+		                        }
+		                    ]
+		                }
+		            ]
+		        }
+		    ]
+		}	
+}

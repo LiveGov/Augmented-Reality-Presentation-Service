@@ -1,0 +1,22 @@
+<resources>
+	<string name="questionaire_submit_button">Bidali</string>
+	<string name="user_information_title">Erabiltzailearen informazioa</string>
+	<string name="user_information_button_cancel">Utzi</string>
+	<string name="user_information_button_save">Gorde</string>
+	<string name="user_information_intro_text">Mesedez bete itzazu zure datu pertsonalak. </string>
+	<string name="user_info_cancel_button">Utzi</string>
+	<string name="user_info_save_button">Gorde</string>
+	<string name="user_information_failed_to_load_questionaire">Erabiltzailearen informazioaren igotzean akatzen bat agertu da. Saia zaitez berriro.</string>
+	<string name="questionaire_result_total">Bidalitako kuestionario kopuru: </string>
+	<string name="detailfragment_no_userinfo_title">Erabiltzailearen datuak falta dira.</string>
+	<string name="detailfragment_no_userinfo_Message">Kuestionarioa bidaltzeko erabiltzailearen datu gehiago behar dugu. </string>
+	<string name="detailfragment_no_anonymous_id_title"> Kuestionario bidaltzerakoan akatza agertu da.</string>
+	<string name="detailfragment_failed_to_load_questionaire">Kuestionario igotzerakoan akatza agertu da. Mesedez, saia zaitez beranduago.</string>
+	<string name="detailfragment_no_anonymous_id_Message">Mesedez, saia zaitez beranduago.</string>
+	<string name="detailfragment_failed_to_send_title">Kuestionario hau bidaltzerakoan akatza agertu da.</string>
+	<string name="detailfragment_failed_to_send_Message">Mesedez, saia zaitez beranduago.</string>
+	<string name="loc_low_accuracy">Eskainitako esperientzia ez da espero zena, zure kokapena oso zehatza ez delako (XXX metro).</string>
+	<string name="loc_old_timestamp">Eskainitako esperientzia ez da espero zena, denbora zigilua oso aspaldikoa delako (duela XXX minutuko)</string>
+	<string name="loc_improved_accuracy">Kokapenaren zehaztazuna XXX metrotara hobetu da.</string>
+	<string name="tempwarn">Zure gailua oso tenperatura altua hartzen ari da: XXXXX. Mesedez errealitate areagotua ikuspegitik atera eta itzuli minutu batzuk geroago, hoztu ahal izateko.</string>
+</resources>

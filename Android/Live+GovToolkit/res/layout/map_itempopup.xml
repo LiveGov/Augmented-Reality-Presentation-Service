@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_margin="10dp"
+    android:background="@drawable/custom_info_bubble"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/map_popup_title"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_gravity="center"
+            android:text="Here goes the title of the plan, that it might get two lines."
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imbInfoClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:background="#00000000"
+            android:gravity="center"
+            android:src="@drawable/info_map_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/map_popup_Thumbnail"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/map_popup_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="Here is the description in Spanish, Basque, or English. The smart fox jumps over the lazy dog and the rest things. Indeed very long sentence."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+</LinearLayout>
